@@ -62,7 +62,7 @@ class prof extends StatelessWidget {
           appBar: AppBar(
             backgroundColor: Color.fromARGB(255, 250, 127, 114),
             title: Text(
-              "Air Badminton",
+              "Air  Badminton",
               style: TextStyle(color: Colors.black),
             ),
             actions: <Widget>[
