@@ -44,7 +44,7 @@ class prof extends StatelessWidget {
           appBar: AppBar(
             backgroundColor: Color.fromARGB(255, 250, 127, 114),
             title: Text(
-              "Para badminton",
+              "Parabadminton",
               style: TextStyle(color: Colors.black),
             ),
             actions: <Widget>[
