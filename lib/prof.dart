@@ -44,7 +44,7 @@ class prof extends StatelessWidget {
           appBar: AppBar(
             backgroundColor: Color.fromARGB(255, 250, 127, 114),
             title: Text(
-              "Parabadminton",
+              "Para badminton",
               style: TextStyle(color: Colors.black),
             ),
             actions: <Widget>[
@@ -76,7 +76,6 @@ class prof extends StatelessWidget {
           drawer: CustomDrawer(_pageController),
           body: AirBadminton(),
         ),
-       
         Scaffold(
           appBar: AppBar(
             backgroundColor: Color.fromARGB(255, 250, 127, 114),
