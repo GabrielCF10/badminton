@@ -1,5 +1,8 @@
+import 'package:badmintop/forum/first.dart';
+import 'package:badmintop/home.dart';
 import 'package:badmintop/pages/airbadminton.dart';
 import 'package:badmintop/pages/badminton.dart';
+import 'package:badmintop/pages/home.dart';
 import 'package:badmintop/pages/parabadminton.dart';
 
 import 'package:badmintop/tabs/home_tab.dart';
@@ -9,6 +12,7 @@ import 'package:badmintop/widgets/custom_drawer2.dart';
 import 'package:flutter/material.dart';
 
 import 'AplicativoOfc/linkfor.dart';
+import 'forum/main.dart';
 
 class prof extends StatelessWidget {
   final _pageController = PageController();
@@ -19,8 +23,35 @@ class prof extends StatelessWidget {
       physics: NeverScrollableScrollPhysics(),
       children: <Widget>[
         Scaffold(
-          body: HomeTab(),
+          appBar: AppBar(
+            backgroundColor: Color.fromARGB(255, 250, 127, 114),
+            title: Text(
+              "Forum",
+              style: TextStyle(color: Colors.black),
+            ),
+            actions: <Widget>[
+              /*Icon(
+                Icons.account_circle,
+                size: 40.0,
+              ),
+              */
+              IconButton(
+                icon: const Icon(
+                  Icons.account_circle,
+                  size: 40.0,
+                ),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => Perfil()));
+                },
+              ),
+            ],
+            centerTitle: true,
+          ),
           drawer: CustomDrawer(_pageController),
+          body: Forum(),
         ),
         Scaffold(
           appBar: AppBar(
@@ -30,9 +61,17 @@ class prof extends StatelessWidget {
               style: TextStyle(color: Colors.black),
             ),
             actions: <Widget>[
-              Icon(
-                Icons.account_circle,
-                size: 40.0,
+              IconButton(
+                icon: const Icon(
+                  Icons.account_circle,
+                  size: 40.0,
+                ),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => Perfil()));
+                },
               ),
             ],
             centerTitle: true,
@@ -48,10 +87,18 @@ class prof extends StatelessWidget {
               style: TextStyle(color: Colors.black),
             ),
             actions: <Widget>[
-              Icon(
-                Icons.account_circle,
-                size: 40.0,
-              )
+              IconButton(
+                icon: const Icon(
+                  Icons.account_circle,
+                  size: 40.0,
+                ),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => Perfil()));
+                },
+              ),
             ],
             centerTitle: true,
           ),
@@ -66,10 +113,18 @@ class prof extends StatelessWidget {
               style: TextStyle(color: Colors.black),
             ),
             actions: <Widget>[
-              Icon(
-                Icons.account_circle,
-                size: 40.0,
-              )
+              IconButton(
+                icon: const Icon(
+                  Icons.account_circle,
+                  size: 40.0,
+                ),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => Perfil()));
+                },
+              ),
             ],
             centerTitle: true,
           ),
@@ -84,10 +139,18 @@ class prof extends StatelessWidget {
               style: TextStyle(color: Colors.black),
             ),
             actions: <Widget>[
-              Icon(
-                Icons.account_circle,
-                size: 40.0,
-              )
+              IconButton(
+                icon: const Icon(
+                  Icons.account_circle,
+                  size: 40.0,
+                ),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => Perfil()));
+                },
+              ),
             ],
             centerTitle: true,
           ),

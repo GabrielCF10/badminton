@@ -2,164 +2,162 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:dio/dio.dart';
 
-class HomePage extends StatefulWidget {
+class Forum extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _ForumState createState() => _ForumState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _ForumState extends State<Forum> {
   final dio = new Dio(); // for http requests
   Widget _appBarTitle = new Text('Search...');
   Icon _searchIcon = new Icon(Icons.search);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ListView(
-        scrollDirection: Axis.vertical,
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Container(
-              child: new FittedBox(
-                child: Material(
-                    color: Colors.white,
-                    elevation: 14.0,
-                    borderRadius: BorderRadius.circular(24.0),
-                    shadowColor: Color(0x802196F3),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: <Widget>[
-                        Container(
-                          child: Padding(
-                            padding: const EdgeInsets.only(left: 16.0),
-                            child: myDetailsContainer1(),
+    return ListView(
+      scrollDirection: Axis.vertical,
+      children: <Widget>[
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Container(
+            child: new FittedBox(
+              child: Material(
+                  color: Colors.white,
+                  elevation: 14.0,
+                  borderRadius: BorderRadius.circular(24.0),
+                  shadowColor: Color(0x802196F3),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 16.0),
+                          child: myDetailsContainer1(),
+                        ),
+                      ),
+                      Container(
+                        width: 250,
+                        height: 200,
+                        child: ClipRRect(
+                          borderRadius: new BorderRadius.circular(24.0),
+                          child: Image(
+                            fit: BoxFit.contain,
+                            alignment: Alignment.topRight,
+                            image: AssetImage('assets/peteca3.jpg'),
                           ),
                         ),
-                        Container(
-                          width: 250,
-                          height: 200,
-                          child: ClipRRect(
-                            borderRadius: new BorderRadius.circular(24.0),
-                            child: Image(
-                              fit: BoxFit.contain,
-                              alignment: Alignment.topRight,
-                              image: AssetImage('assets/peteca3.jpg'),
-                            ),
-                          ),
-                        ),
-                      ],
-                    )),
-              ),
+                      ),
+                    ],
+                  )),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Container(
-              child: new FittedBox(
-                child: Material(
-                    color: Colors.white,
-                    elevation: 14.0,
-                    borderRadius: BorderRadius.circular(24.0),
-                    shadowColor: Color(0x802196F3),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: <Widget>[
-                        Container(
-                          child: Padding(
-                            padding: const EdgeInsets.only(left: 16.0),
-                            child: myDetailsContainer4(),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Container(
+            child: new FittedBox(
+              child: Material(
+                  color: Colors.white,
+                  elevation: 14.0,
+                  borderRadius: BorderRadius.circular(24.0),
+                  shadowColor: Color(0x802196F3),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 16.0),
+                          child: myDetailsContainer4(),
+                        ),
+                      ),
+                      Container(
+                        width: 250,
+                        height: 180,
+                        child: ClipRRect(
+                          borderRadius: new BorderRadius.circular(24.0),
+                          child: Image(
+                            fit: BoxFit.contain,
+                            alignment: Alignment.topRight,
+                            image: AssetImage('assets/oculos.webp'),
                           ),
                         ),
-                        Container(
-                          width: 250,
-                          height: 180,
-                          child: ClipRRect(
-                            borderRadius: new BorderRadius.circular(24.0),
-                            child: Image(
-                              fit: BoxFit.contain,
-                              alignment: Alignment.topRight,
-                              image: AssetImage('assets/oculos.webp'),
-                            ),
-                          ),
-                        ),
-                      ],
-                    )),
-              ),
+                      ),
+                    ],
+                  )),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Container(
-              child: new FittedBox(
-                child: Material(
-                    color: Colors.white,
-                    elevation: 14.0,
-                    borderRadius: BorderRadius.circular(24.0),
-                    shadowColor: Color(0x802196F3),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: <Widget>[
-                        Container(
-                          child: Padding(
-                            padding: const EdgeInsets.only(left: 16.0),
-                            child: myDetailsContainer3(),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Container(
+            child: new FittedBox(
+              child: Material(
+                  color: Colors.white,
+                  elevation: 14.0,
+                  borderRadius: BorderRadius.circular(24.0),
+                  shadowColor: Color(0x802196F3),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 16.0),
+                          child: myDetailsContainer3(),
+                        ),
+                      ),
+                      Container(
+                        width: 250,
+                        height: 180,
+                        child: ClipRRect(
+                          borderRadius: new BorderRadius.circular(24.0),
+                          child: Image(
+                            fit: BoxFit.contain,
+                            alignment: Alignment.topRight,
+                            image: AssetImage('assets/tenis.jpg'),
                           ),
                         ),
-                        Container(
-                          width: 250,
-                          height: 180,
-                          child: ClipRRect(
-                            borderRadius: new BorderRadius.circular(24.0),
-                            child: Image(
-                              fit: BoxFit.contain,
-                              alignment: Alignment.topRight,
-                              image: AssetImage('assets/tenis.jpg'),
-                            ),
-                          ),
-                        ),
-                      ],
-                    )),
-              ),
+                      ),
+                    ],
+                  )),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Container(
-              child: new FittedBox(
-                child: Material(
-                    color: Colors.white,
-                    elevation: 14.0,
-                    borderRadius: BorderRadius.circular(24.0),
-                    shadowColor: Color(0x802196F3),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: <Widget>[
-                        Container(
-                          child: Padding(
-                            padding: const EdgeInsets.only(left: 16.0),
-                            child: myDetailsContainer2(),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Container(
+            child: new FittedBox(
+              child: Material(
+                  color: Colors.white,
+                  elevation: 14.0,
+                  borderRadius: BorderRadius.circular(24.0),
+                  shadowColor: Color(0x802196F3),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 16.0),
+                          child: myDetailsContainer2(),
+                        ),
+                      ),
+                      Container(
+                        width: 250,
+                        height: 180,
+                        child: ClipRRect(
+                          borderRadius: new BorderRadius.circular(24.0),
+                          child: Image(
+                            fit: BoxFit.contain,
+                            alignment: Alignment.topRight,
+                            image: AssetImage('assets/bolsa.jpg'),
                           ),
                         ),
-                        Container(
-                          width: 250,
-                          height: 180,
-                          child: ClipRRect(
-                            borderRadius: new BorderRadius.circular(24.0),
-                            child: Image(
-                              fit: BoxFit.contain,
-                              alignment: Alignment.topRight,
-                              image: AssetImage('assets/bolsa.jpg'),
-                            ),
-                          ),
-                        ),
-                      ],
-                    )),
-              ),
+                      ),
+                    ],
+                  )),
             ),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 

@@ -78,12 +78,11 @@ class CustomDrawer extends StatelessWidget {
                 ),
               ),
               Divider(),
-              DrawerTile(Icons.home, "Novidades", pageController, 0),
+              DrawerTile(Icons.home, "Forum", pageController, 0),
               DrawerTile(Icons.help, "Badminton", pageController, 1),
               DrawerTile(
                   Icons.construction, "Parabadminton", pageController, 2),
               DrawerTile(Icons.rule, "Air Badminton", pageController, 3),
-              
               DrawerTile(Icons.article_outlined, "Aplicativo oficial CBBd",
                   pageController, 4),
             ],
