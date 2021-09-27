@@ -6,7 +6,7 @@ import 'package:badmintop/Equipamentos/raquetes.dart';
 import 'package:badmintop/Equipamentos/tenis.dart';
 
 import 'package:flutter/material.dart';
-
+//comentario
 class Equipamentos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
