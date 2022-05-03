@@ -1,6 +1,6 @@
 import 'package:badmintop/HistoriaPara/brasil.dart';
 import 'package:badmintop/HistoriaPara/historiap.dart';
-import 'package:badmintop/pages/home.dart';
+import 'package:badmintop/pages/pdf_viwer.dart';
 import 'package:badmintop/tabs/equipamentos_tabs.dart';
 import 'package:badmintop/tabs/regras_tabs.dart';
 import 'package:badmintop/tabspara/carac.dart';
@@ -20,12 +20,7 @@ class HistoriaPara extends StatelessWidget {
             style: TextStyle(color: Colors.black),
           ),
           centerTitle: true,
-          actions: <Widget>[
-            Icon(
-              Icons.account_circle,
-              size: 40.0,
-            )
-          ],
+          actions: <Widget>[],
         ),
         body: Padding(
           padding: EdgeInsets.all(7.0),

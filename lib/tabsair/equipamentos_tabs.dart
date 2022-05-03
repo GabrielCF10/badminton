@@ -1,4 +1,4 @@
-import 'package:badmintop/pages/home.dart';
+import 'package:badmintop/pages/pdf_viwer.dart';
 import 'package:badmintop/tabs/equipamentos_tabs.dart';
 import 'package:badmintop/tabs/regras_tabs.dart';
 import 'package:badmintop/tabsair/equipamentos_air.dart/linhas.dart';

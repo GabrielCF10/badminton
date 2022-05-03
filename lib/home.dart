@@ -1,52 +1,97 @@
-import 'package:badmintop/prof.dart';
+import 'package:badmintop/Login/login_screen.dart';
+import 'package:badmintop/Login/models/user_model.dart';
+import 'package:badmintop/tiles/drawer_tile.dart';
 import 'package:flutter/material.dart';
+import 'package:scoped_model/scoped_model.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class Home extends StatelessWidget {
+  final PageController pageController;
+
+  Home(this.pageController);
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: <Widget>[
-        Image.asset("assets/badmau.jpg", fit: BoxFit.cover, height: 800.0),
-        Material(
-          type: MaterialType.transparency,
-          child: Padding(
-            padding: EdgeInsets.fromLTRB(50.0, 140.0, 50.0, 0.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                Padding(
-                  padding: EdgeInsets.only(bottom: 250.0),
-                  child: Text("Bem vindo ao Badtop!",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 30.0,
-                          fontWeight: FontWeight.bold)),
-                ),
-                Container(
-                  height: 70.0,
-                  child: RaisedButton(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30.0),
+    Widget _bulidDrawerBack() => Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+                  colors: [Color.fromARGB(255, 203, 236, 241), Colors.white],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter)),
+        );
+    return Drawer(
+      child: Stack(
+        children: <Widget>[
+          _bulidDrawerBack(),
+          ListView(
+            padding: EdgeInsets.only(left: 32.0, top: 16.0),
+            children: <Widget>[
+              Container(
+                margin: EdgeInsets.only(bottom: 8.0),
+                padding: EdgeInsets.fromLTRB(0.0, 32.0, 16.0, 8.0),
+                height: 170.0,
+                child: Stack(
+                  children: <Widget>[
+                    Positioned(
+                      top: 8.0,
+                      left: 0.0,
+                      child: Text(
+                        "BadminTop",
+                        style: TextStyle(
+                            fontSize: 44.0, fontWeight: FontWeight.bold),
+                      ),
                     ),
-                    child: Text(
-                      " Efetuar Login",
-                      style: TextStyle(fontSize: 20.0, color: Colors.black),
-                    ),
-                    color: Colors.white,
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (BuildContext context) => prof()));
-                    },
-                  ),
+                    Positioned(
+                      left: 0.0,
+                      bottom: 0.0,
+                      child: ScopedModelDescendant<UserModel>(
+                          builder: (context, child, model) {
+                        return Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              "Olá, ${!model.isLoggedIn() ? "" : model.userData[("name")]}",
+                              style: TextStyle(
+                                  fontSize: 18.0, fontWeight: FontWeight.bold),
+                            ),
+                            GestureDetector(
+                              child: Text(
+                                !model.isLoggedIn()
+                                    ? "Entre ou Cadastre-se >"
+                                    : "Sair",
+                                style: TextStyle(
+                                    color: Colors.blue,
+                                    fontSize: 16.0,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              onTap: () {
+                                if (!model.isLoggedIn()) {
+                                  Navigator.of(context).push(MaterialPageRoute(
+                                      builder: (context) => LoginScreen()));
+                                } else
+                                  model.signOut();
+                              },
+                            ),
+                          ],
+                        );
+                      }),
+                    )
+                  ],
                 ),
-              ],
-            ),
+              ),
+              Divider(),
+              DrawerTile(Icons.home, "Home", pageController, 0),
+              DrawerTile(Icons.forum_rounded, "Forum", pageController, 1),
+              DrawerTile(MdiIcons.tennis, "Badminton", pageController, 2),
+              DrawerTile(Icons.accessible_forward_outlined, "Parabadminton",
+                  pageController, 3),
+              DrawerTile(
+                  MdiIcons.badminton, "Air Badminton", pageController, 4),
+              DrawerTile(Icons.article_outlined, "Aplicativos oficiais CBBd",
+                  pageController, 5),
+            ],
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

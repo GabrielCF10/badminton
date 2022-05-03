@@ -23,45 +23,8 @@ class Raquetesair extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  'Raquetes AirBadminton',
+                  'Raquetes',
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                ),
-                Container(
-                  padding: EdgeInsets.all(20),
-                  child: Text(
-                    'Como o jogo de AirBadminton ocorre em um ambiente externo, a presença do vento e rajadas irá impactar o desempenho do voo da peteca. Muito da potência de um golpe de Badminton advém do encordoamento, logo é importante conhecer como a tensão da corda afeta o jogo de AirBadminton.',
-                    textAlign: TextAlign.justify,
-                    style: TextStyle(
-                      fontSize: 20,
-                    ),
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(20),
-                  child: Text(
-                    'AirBadminton foi projetado para ser jogado com as mesmas raquetes tradicionais de Badminton. No entanto, baseado nos elementos externos envolvidos no jogo, é recomendado que os jogadores usem uma tensão menor no encordoamento (8 a 9 kg / 17.5 -20 lb) e uma corda mais grossa quando jogando AirBadminton.',
-                    textAlign: TextAlign.justify,
-                    style: TextStyle(
-                      fontSize: 20,
-                    ),
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(20),
-                  child: Text(
-                    'Sendo assim, vamos aprender um pouco mais sobre as raquetes!',
-                    textAlign: TextAlign.justify,
-                    style: TextStyle(
-                      fontSize: 20,
-                    ),
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(20),
-                  child: Text(
-                    'Raquetes:',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                  ),
                 ),
                 Container(
                   padding: EdgeInsets.all(20),
@@ -97,7 +60,7 @@ class Raquetesair extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(20),
                   child: Text(
-                    'O jogador deve conferir o tamanho do punho que lhe parecer mais confortável. Os punhos das raquetes variam em tamanho de 8.6 a 9.2 cm. Deve-se usar um grip que proporcione conforto e segurança durante o jogo.',
+                    'O jogador deve conferir o tamanho do punho que lhe parecer mais confortável. Os punhos das raquetes variam em tamanho de 8,6 a 9,2 cm. Deve-se usar um grip que proporcione conforto e segurança durante o jogo.',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 20,
@@ -144,6 +107,10 @@ class Raquetesair extends StatelessWidget {
                     'T-piece:',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(20),
+                  child: Image.asset('assets/T-piece.webp'),
                 ),
                 Container(
                   padding: EdgeInsets.all(20),

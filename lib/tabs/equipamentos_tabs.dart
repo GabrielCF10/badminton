@@ -18,12 +18,6 @@ class Equipamentos extends StatelessWidget {
           style: TextStyle(color: Colors.black),
         ),
         centerTitle: true,
-        actions: <Widget>[
-          Icon(
-            Icons.account_circle,
-            size: 40.0,
-          )
-        ],
       ),
       body: ListView(
         padding: EdgeInsets.all(7.0),
@@ -71,7 +65,7 @@ class Equipamentos extends StatelessWidget {
           Container(
             height: 70.0,
             child: RaisedButton(
-              child: Text("Sapatos",
+              child: Text("Calçados",
                   style: TextStyle(fontSize: 20.0, color: Colors.black)),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30.0),

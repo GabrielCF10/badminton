@@ -60,7 +60,7 @@ class Raquetes extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(20),
                   child: Text(
-                    'O jogador deve conferir o tamanho do punho que lhe parecer mais confortável. Os punhos das raquetes variam em tamanho de 8.6 a 9.2 cm. Deve-se usar um grip que proporcione conforto e segurança durante o jogo.',
+                    'O jogador deve conferir o tamanho do punho que lhe parecer mais confortável. Os punhos das raquetes variam em tamanho de 8,6 a 9,2 cm. Deve-se usar um grip que proporcione conforto e segurança durante o jogo.',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 20,
@@ -107,6 +107,10 @@ class Raquetes extends StatelessWidget {
                     'T-piece:',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(20),
+                  child: Image.asset('assets/T-piece.webp'),
                 ),
                 Container(
                   padding: EdgeInsets.all(20),

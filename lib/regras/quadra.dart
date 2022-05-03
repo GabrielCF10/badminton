@@ -46,6 +46,10 @@ class QUADRA extends StatelessWidget {
                     ),
                   ),
                 ),
+                Container(
+                  padding: EdgeInsets.all(20),
+                  child: Image.asset('assets/quadra.png'),
+                ),
               ],
             ),
           ),

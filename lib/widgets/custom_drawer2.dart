@@ -3,6 +3,7 @@ import 'package:badmintop/Login/models/user_model.dart';
 import 'package:badmintop/tiles/drawer_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class CustomDrawer extends StatelessWidget {
   final PageController pageController;
@@ -48,7 +49,7 @@ class CustomDrawer extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             Text(
-                              "Olá, ${!model.isLoggedIn() ? "" : model.userData["name"]}",
+                              "Olá, ${!model.isLoggedIn() ? "" : model.userData[("name")]}",
                               style: TextStyle(
                                   fontSize: 18.0, fontWeight: FontWeight.bold),
                             ),
@@ -78,13 +79,15 @@ class CustomDrawer extends StatelessWidget {
                 ),
               ),
               Divider(),
-              DrawerTile(Icons.home, "Forum", pageController, 0),
-              DrawerTile(Icons.help, "Badminton", pageController, 1),
+              DrawerTile(Icons.home, "Home", pageController, 0),
+              DrawerTile(Icons.forum_rounded, "Forum", pageController, 1),
+              DrawerTile(MdiIcons.tennis, "Badminton", pageController, 2),
+              DrawerTile(Icons.accessible_forward_outlined, "Parabadminton",
+                  pageController, 3),
               DrawerTile(
-                  Icons.construction, "Parabadminton", pageController, 2),
-              DrawerTile(Icons.rule, "Air Badminton", pageController, 3),
-              DrawerTile(Icons.article_outlined, "Aplicativo oficial CBBd",
-                  pageController, 4),
+                  MdiIcons.badminton, "Air Badminton", pageController, 4),
+              DrawerTile(Icons.article_outlined, "Aplicativos oficiais CBBd",
+                  pageController, 5),
             ],
           ),
         ],

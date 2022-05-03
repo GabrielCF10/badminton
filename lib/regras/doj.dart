@@ -35,7 +35,11 @@ class DOJ extends StatelessWidget {
                       fontSize: 20,
                     ),
                   ),
-                )
+                ),
+                Container(
+                  padding: EdgeInsets.all(20),
+                  child: Image.asset('assets/rally.jpg'),
+                ),
               ],
             ),
           ),

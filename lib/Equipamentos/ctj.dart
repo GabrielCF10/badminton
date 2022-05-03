@@ -29,7 +29,7 @@ class CTJ extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(20),
                   child: Text(
-                    'São recomendadas para dar maior firmeza durante o jogo e para que o atleta preserve os tendões. antes de praticar qualquer esporte converse com um médico para avaliar as suas condições físicas.',
+                    'Esse equipamento não é específico do badminton. Entretanto, são recomendadas para dar maior firmeza durante o jogo e para que o atleta preserve os tendões.  ',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 20,

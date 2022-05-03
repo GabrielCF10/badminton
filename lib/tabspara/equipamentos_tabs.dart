@@ -1,9 +1,9 @@
-import 'package:badmintop/Equipamentos/bolsa_raquete.dart';
-import 'package:badmintop/Equipamentos/ctj.dart';
-import 'package:badmintop/Equipamentos/oculos.dart';
-import 'package:badmintop/Equipamentos/peteca.dart';
-import 'package:badmintop/Equipamentos/raquetes.dart';
-import 'package:badmintop/Equipamentos/tenis.dart';
+import 'package:badmintop/tabs/equipamentos/bolsa_raquete.dart';
+import 'package:badmintop/tabs/equipamentos/ctj.dart';
+import 'package:badmintop/tabs/equipamentos/oculos.dart';
+import 'package:badmintop/tabs/equipamentos/peteca.dart';
+import 'package:badmintop/tabs/equipamentos/raquetes.dart';
+import 'package:badmintop/tabs/equipamentos/tenis.dart';
 import 'package:flutter/material.dart';
 
 class EquipamentosPara extends StatelessWidget {
@@ -17,12 +17,7 @@ class EquipamentosPara extends StatelessWidget {
           style: TextStyle(color: Colors.black),
         ),
         centerTitle: true,
-        actions: <Widget>[
-          Icon(
-            Icons.account_circle,
-            size: 40.0,
-          )
-        ],
+        actions: <Widget>[],
       ),
       body: ListView(
         padding: EdgeInsets.all(7.0),
@@ -40,7 +35,7 @@ class EquipamentosPara extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (BuildContext context) => Petecas()));
+                        builder: (BuildContext context) => PetecasPA()));
               },
             ),
           ),
@@ -60,7 +55,7 @@ class EquipamentosPara extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (BuildContext context) => Raquetes()));
+                        builder: (BuildContext context) => RaquetesPA()));
               },
             ),
           ),
@@ -70,7 +65,7 @@ class EquipamentosPara extends StatelessWidget {
           Container(
             height: 70.0,
             child: RaisedButton(
-              child: Text("Sapatos",
+              child: Text("Calçados",
                   style: TextStyle(fontSize: 20.0, color: Colors.black)),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30.0),
@@ -80,7 +75,7 @@ class EquipamentosPara extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (BuildContext context) => Sapatos()));
+                        builder: (BuildContext context) => SapatosPA()));
               },
             ),
           ),
@@ -100,7 +95,7 @@ class EquipamentosPara extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (BuildContext context) => CTJ()));
+                        builder: (BuildContext context) => CTJPA()));
               },
             ),
           ),
@@ -120,7 +115,7 @@ class EquipamentosPara extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (BuildContext context) => BolsaRa()));
+                        builder: (BuildContext context) => BolsaRaPa()));
               },
             ),
           ),
@@ -140,7 +135,7 @@ class EquipamentosPara extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (BuildContext context) => Oculos()));
+                        builder: (BuildContext context) => OculosPA()));
               },
             ),
           ),

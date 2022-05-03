@@ -1,0 +1,50 @@
+import 'package:flutter/material.dart';
+
+class BolsaRaPa extends StatelessWidget {
+  const BolsaRaPa({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 250, 127, 114),
+        title: Text(
+          "Equipamentos",
+          style: TextStyle(color: Colors.black),
+        ),
+        centerTitle: true,
+      ),
+      body: ListView(
+        padding: EdgeInsets.all(7.0),
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  'Bolsa para as raquetes',
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                ),
+                Container(
+                  padding: EdgeInsets.all(20),
+                  child: Text(
+                    'Apesar de não ser um item essencial para a prática do esporte em si, uma bolsa para raquetes pode ser um item muito interessante de se obter. Além de proteger as suas raquetes e petecas, você pode carregar numa bolsa de raquetes algumas toalhas, raquetes reserva, camisas, talco para as mãos, munhequeira de toalha, fita para a cabeça etc. ',
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(20),
+                  child: Image.asset('assets/bolsapa.jpg'),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}

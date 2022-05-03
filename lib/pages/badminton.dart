@@ -9,7 +9,7 @@ class Badminton extends StatelessWidget {
     return Stack(
       children: <Widget>[
         Padding(
-          padding: EdgeInsets.all(7.0),
+          padding: EdgeInsets.all(20.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.center,

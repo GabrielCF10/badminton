@@ -18,12 +18,6 @@ class Historia extends StatelessWidget {
             style: TextStyle(color: Colors.black),
           ),
           centerTitle: true,
-          actions: <Widget>[
-            Icon(
-              Icons.account_circle,
-              size: 40.0,
-            )
-          ],
         ),
         body: Padding(
           padding: EdgeInsets.all(7.0),

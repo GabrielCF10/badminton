@@ -29,7 +29,7 @@ class Petecas extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(20),
                   child: Text(
-                    'A "bola" usada no Badminton é uma frágil e aerodinamicamente eficiente peteca. As petecas usadas em competições pesam entre 4.74 e 5.50 gramas.',
+                    'O “shuttle” ou “birdie” é uma frágil e aerodinamicamente eficiente peteca utilizada para a prática do badminton. As petecas usadas em competições pesam entre 4,74 e 5,50 gramas. ',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 20,
@@ -38,12 +38,12 @@ class Petecas extends StatelessWidget {
                 ),
                 Container(
                   padding: EdgeInsets.all(20),
-                  child: Image.asset('assets/peteca3.jpg'),
+                  child: Image.asset('assets/petecapenas.jpg'),
                 ),
                 Container(
                   padding: EdgeInsets.all(20),
                   child: Text(
-                    'Existem dois tipos de petecas, as tradicionais, feitas com penas de ganso e as sintéticas, feitas de nylon. ambas possuem bases esféricas feitas de cortiça ou poliuretano, contendo um pequeno peso de chumbo, sem o qual a peteca seria muito leve para percorrer as distâncias necessárias. A esta base estão fixadas 16 penas, e no caso das petecas de nylon, uma "saia" deste material. Jogadores profissionais só utilizam as petecas de penas, que só duram alguns rallies , pois as penas não suportam os golpes',
+                    'Existem dois tipos de petecas, as tradicionais, feitas com penas de ganso e as sintéticas, feitas de nylon. Ambas possuem bases esféricas feitas de cortiça ou poliuretano, contendo um pequeno peso de chumbo, sem o qual a peteca seria muito leve para percorrer as distâncias necessárias. A esta base estão fixadas 16 penas, e no caso das petecas de nylon, uma "saia" deste material. Jogadores profissionais só utilizam as petecas de penas, que só duram alguns rallies , pois as penas não suportam os golpes',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 20,
@@ -62,7 +62,7 @@ class Petecas extends StatelessWidget {
                 ),
                 Container(
                   padding: EdgeInsets.all(20),
-                  child: Image.asset('assets/petecapenas.jpg'),
+                  child: Image.asset('assets/peteca3.jpg'),
                 ),
                 Container(
                   padding: EdgeInsets.all(20),

@@ -29,7 +29,7 @@ class BolsaRa extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(20),
                   child: Text(
-                    'Além de proteger as suas raquetes e petecas, você pode carregar numa bolsa de raquetes algumas toalhas, raquetes reserva, camisas, talco para as mãos, munhequeira de toalha, fita para a cabeça etc.',
+                    'Apesar de não ser um item essencial para a prática do esporte em si, uma bolsa para raquetes pode ser um item muito interessante de se obter. Além de proteger as suas raquetes e petecas, você pode carregar numa bolsa de raquetes algumas toalhas, raquetes reserva, camisas, talco para as mãos, munhequeira de toalha, fita para a cabeça etc. ',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 20,

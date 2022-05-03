@@ -23,7 +23,7 @@ class FIM extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  'Fim do jogo',
+                  'Sistema de Pontuação',
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
                 Container(
@@ -35,7 +35,11 @@ class FIM extends StatelessWidget {
                       fontSize: 20,
                     ),
                   ),
-                )
+                ),
+                Container(
+                  padding: EdgeInsets.all(20),
+                  child: Image.asset('assets/fim.jpg'),
+                ),
               ],
             ),
           ),
